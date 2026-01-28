@@ -184,8 +184,9 @@ const Hero = () => (
         <div className="inline-block px-4 py-2 bg-accent text-primary rounded-full text-xs font-bold mb-6 tracking-wide uppercase">
           {APP_NAME}
         </div>
-        <h1 className="text-5xl lg:text-7xl font-serif font-black leading-tight mb-8">
-          Urus Keuangan Bisnis Jadi Lebih <span className="text-primary">Tenang</span>, Nggak Pake Pusing.
+        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] text-zinc-900 font-medium mb-8">
+          Urus Keuangan Bisnis Jadi Lebih <br/>
+          <span className="italic text-primary">Tenang, Nggak Pake Pusing.</span>
         </h1>
         <p className="text-lg text-zinc-600 mb-10 leading-relaxed max-w-lg">
           Lupakan buku catatan yang sering terselip atau rekap berantakan di Excel. Ubah input harianmu menjadi <strong>'Buku Rekap Otomatis'</strong> yang rapi. Kamu yang input datanya, biarkan kami yang rapiin laporannya.
