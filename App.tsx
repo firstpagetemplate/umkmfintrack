@@ -184,7 +184,7 @@ const Hero = () => (
         <div className="inline-block px-4 py-2 bg-accent text-primary rounded-full text-xs font-bold mb-6 tracking-wide uppercase">
           {APP_NAME}
         </div>
-        <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] text-zinc-900 font-medium mb-8">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-zinc-900 font-medium mb-8">
           Urus Keuangan Bisnis Jadi Lebih Tenang<br/>
           <span className="italic text-primary">Nggak Pake Pusing.</span>
         </h1>
