@@ -185,8 +185,8 @@ const Hero = () => (
           {APP_NAME}
         </div>
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-zinc-900 font-medium mb-8">
-          Berhenti Rekap Manual, Saatnya Pindah ke<br/>
-          <span className="italic text-primary">Aplikasi Keuangan Pintar.</span>
+          Berhenti Rekap Manual, Saatnya Pindah<br/>
+          <span className="italic text-primary">ke Aplikasi Keuangan Pintar.</span>
         </h1>
         <p className="text-lg text-zinc-600 mb-10 leading-relaxed max-w-lg">
           Lupakan buku catatan yang sering terselip atau rekap berantakan di Excel. Ubah input harianmu menjadi <strong>'Buku Rekap Otomatis'</strong> yang rapi. Kamu yang input datanya, biarkan kami yang rapiin laporannya.
@@ -197,7 +197,7 @@ const Hero = () => (
             onClick={(e) => scrollToSection(e, 'harga')}
             className="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-primary/30 flex items-center justify-center gap-3 transition-transform hover:-translate-y-1"
           >
-            Aku Mau Rapikan Keuanganku Sekarang
+            Coba Sekarang
             <ArrowRight size={20} />
           </a>
         </div>
