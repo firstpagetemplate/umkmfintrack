@@ -189,7 +189,7 @@ const Hero = () => (
           <span className="italic text-primary">ke Aplikasi Keuangan Pintar.</span>
         </h1>
         <p className="text-lg text-zinc-600 mb-10 leading-relaxed max-w-lg">
-          Lupakan buku catatan yang sering terselip atau rekap berantakan di Excel. Ubah input harianmu menjadi <strong>'Buku Rekap Otomatis'</strong> yang rapi. Kamu yang input datanya, biarkan kami yang rapiin laporannya.
+          Lupakan buku catatan yang sering terselip atau rekap berantakan di Excel. Ubah input harianmu menjadi <strong>'Buku Rekap Otomatis'</strong> yang rapi. Kamu yang input datanya, biarkan aplikasi ini yang rapiin laporannya.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a 
@@ -375,7 +375,7 @@ const BentoGrid = () => (
             <div className="w-full bg-white/10 h-1.5 rounded-full mt-4 overflow-hidden">
               <div className="bg-primary h-full w-[70%]" />
             </div>
-            <p className="text-[10px] mt-2 text-zinc-400">70% Cicilan Lunas</p>
+            <p className="text-[10px] mt-2 text-zinc-400">Mudah Pantu Cicilan Setiap Saat</p>
           </div>
         </motion.div>
 
@@ -389,7 +389,7 @@ const BentoGrid = () => (
           <div className="mt-4">
             <h3 className="text-xl font-bold mb-1">Kejar Target!</h3>
             <p className="text-xs text-zinc-600">Pantau target profit tahunanmu.</p>
-            <div className="mt-2 text-3xl font-black text-primary">Rp 500 Jt</div>
+            <div className="mt-2 text-3xl font-black text-primary">Rp 200 Jt</div>
           </div>
         </motion.div>
       </div>
