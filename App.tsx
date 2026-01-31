@@ -185,8 +185,8 @@ const Hero = () => (
           {APP_NAME}
         </div>
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] text-zinc-900 font-medium mb-8">
-          Urus Keuangan Bisnis Jadi Lebih <br/>
-          <span className="italic text-primary">Tenang, Nggak Pake Pusing.</span>
+          Urus Keuangan Bisnis Jadi Lebih Tenang<br/>
+          <span className="italic text-primary">Nggak Pake Pusing.</span>
         </h1>
         <p className="text-lg text-zinc-600 mb-10 leading-relaxed max-w-lg">
           Lupakan buku catatan yang sering terselip atau rekap berantakan di Excel. Ubah input harianmu menjadi <strong>'Buku Rekap Otomatis'</strong> yang rapi. Kamu yang input datanya, biarkan kami yang rapiin laporannya.
@@ -500,7 +500,7 @@ const Pricing = () => (
           {[
             'Template file spreadsheet',
             'Aplikasi pencatatan keuangan siap pakai',
-            'Video panduan penggunan',
+            'Video panduan penggunaan',
             'Akses Selamanya',
             'Update Fitur Gratis'
           ].map((feature, i) => (
