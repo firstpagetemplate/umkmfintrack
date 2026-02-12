@@ -25,7 +25,11 @@ import {
   AlertCircle,
   Search,
   Smartphone,
-  Quote
+  Quote,
+  LayoutDashboard,
+  Package,
+  History,
+  Download
 } from 'lucide-react';
 
 // --- Constants ---
@@ -33,7 +37,8 @@ const CTA_LINK = "http://lynk.id/firstpage.template/p4emxk1r4m23";
 const LOGO_URL = "https://ik.imagekit.io/hijar/favicon_orange_nZdGmQxhG.png?updatedAt=1769044850518&ik-s=26c0fe12b748484130c41f9eb73212542dc82a4d";
 const APP_NAME = "Aplikasi Manajemen Keuangan UMKM";
 const WHATSAPP_LINK = "https://wa.me/6282133279965?text=Halo%20Admin,%20Saya%20ingin%20bertanya%20mengenai%20produk%20Aplikasi%20Manajemen%20Keuangan%20UMKM%20yang%20kamu%20tawarkan.";
-const VIDEO_URL = "https://ik.imagekit.io/hijar/168343-838892838_tiny_NiBoW0YJs.mp4?updatedAt=1768824583219&ik-s=2c200592f888327af1e31c647e448ba9a8180ce6";
+// GANTI VIDEO_ID dengan ID video YouTube Anda
+const VIDEO_URL = "https://www.youtube.com/embed/vJyg-ck2IIw"; 
 
 const MOCK_DATA = [
   { name: 'Jan', profit: 4000 },
@@ -402,20 +407,17 @@ const VideoDemo = () => (
     <div className="container mx-auto px-6 text-center">
       <h2 className="text-4xl font-serif font-bold mb-4">Lihat Betapa Mudah Menatanya</h2>
       <p className="text-zinc-400 mb-12 max-w-2xl mx-auto">
-        Cek video singkat ini untuk lihat gimana 'Teras Digital' keuanganmu bekerja. Dari input manual yang simpel sampai jadi grafik yang keren.
+        Cek video singkat ini untuk lihat gimana 'Buku Rekap Digital' keuanganmu ini bekerja. Dari input manual yang simpel sampai jadi grafik yang keren.
       </p>
       <div className="relative max-w-4xl mx-auto aspect-video rounded-[2rem] md:rounded-[2.5rem] overflow-hidden group shadow-2xl bg-black">
-        <video 
+        <iframe 
           src={VIDEO_URL}
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-        >
-          Your browser does not support the video tag.
-        </video>
+          className="w-full h-full"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   </section>
@@ -461,6 +463,123 @@ const Testimonial = () => (
     </div>
   </section>
 );
+
+const FullFeaturesSection = () => {
+  const dashboardImages = [
+    { title: "Cash Flow", url: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/cashflow.jpg" },
+    { title: "Laporan Bulanan", url: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/monthly.jpg" },
+    { title: "Laporan Kuartal", url: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/Quarterly.jpg" },
+    { title: "Laporan Tahunan", url: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/annual.jpg" }
+  ];
+
+  const otherFeatures = [
+    {
+      icon: <CreditCard className="w-6 h-6" />,
+      title: "Manajemen Pinjaman & Cicilan",
+      desc: "Pantau cicilan bisnis dengan mudah tanpa was-was dan kendalikan hutang piutang secara real-time.",
+      img: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/manajemen%20cicilan%20pinjaman.jpg"
+    },
+    {
+      icon: <Package className="w-6 h-6" />,
+      title: "Stock Product",
+      desc: "Pantau stok produk jadi lebih mudah dan efisien. Gak ada lagi cerita stok habis tapi jualan terus.",
+      img: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/Inventory%20logs.jpg"
+    },
+    {
+      icon: <History className="w-6 h-6" />,
+      title: "Riwayat Transaksi Lengkap",
+      desc: "Lihat semua riwayat transaksi secara lengkap. Cari data transaksi lama semudah menjentikkan jari.",
+      img: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/pencatatan%20riwayat%20transaksi.jpg"
+    },
+    {
+      icon: <Target className="w-6 h-6" />,
+      title: "Profit Goals",
+      desc: "Tetapkan target profit bulanan atau tahunan. Motivasi bisnismu untuk terus tumbuh melampaui batas.",
+      img: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/profit%20goals.jpg"
+    },
+    {
+      icon: <Download className="w-6 h-6" />,
+      title: "Unduh Laporan PDF",
+      desc: "Cetak laporan profesional dalam format PDF untuk investor, bank, atau keperluan internal bisnismu.",
+      img: "https://ik.imagekit.io/firstpage/UMKM%20FinTrack/Unduh%20laporan%20PDF.jpg"
+    }
+  ];
+
+  return (
+    <section id="fitur-lengkap" className="py-24 bg-white scroll-mt-24">
+      <div className="container mx-auto px-6">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="inline-block px-4 py-2 bg-accent text-primary rounded-full text-xs font-bold mb-4 tracking-wide uppercase">
+            Fitur Lengkap
+          </div>
+          <h2 className="text-4xl md:text-5xl font-serif font-black mb-6 leading-tight">
+            Segala Hal yang Kamu Butuhkan untuk <span className="italic text-primary">Kendalikan Bisnis.</span>
+          </h2>
+          <p className="text-zinc-600 text-lg">
+            Kami merancang setiap fitur untuk memudahkan operasional harianmu. Bukan sekadar input, tapi manajemen cerdas.
+          </p>
+        </div>
+
+        {/* Highlighted Feature: Dashboard */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-20 bg-slate-50 p-8 md:p-12 rounded-[3rem] border border-zinc-200 overflow-hidden"
+        >
+          <div className="flex flex-col lg:flex-row gap-12 items-center mb-12">
+            <div className="lg:w-1/2">
+              <div className="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20">
+                <LayoutDashboard size={28} />
+              </div>
+              <h3 className="text-3xl font-serif font-bold mb-4">Dashboard Keuangan Lengkap</h3>
+              <p className="text-zinc-600 leading-relaxed text-lg">
+                Visualisasi data yang informatif membantu kamu mengambil keputusan lebih cepat. Pantau segalanya mulai dari kas harian hingga performa tahunan dalam satu layar.
+              </p>
+            </div>
+            <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+              {dashboardImages.map((img, idx) => (
+                <div key={idx} className="group relative overflow-hidden rounded-2xl shadow-md border border-white">
+                  <img src={img.url} alt={img.title} className="w-full aspect-video object-cover transition-transform group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">{img.title}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Other Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {otherFeatures.map((feature, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="bg-white p-6 rounded-[2.5rem] border border-zinc-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all flex flex-col h-full"
+            >
+              <div className="mb-6">
+                <div className="w-12 h-12 bg-accent text-primary rounded-xl flex items-center justify-center mb-6">
+                  {feature.icon}
+                </div>
+                <h4 className="text-xl font-bold mb-3">{feature.title}</h4>
+                <p className="text-zinc-500 text-sm leading-relaxed mb-8">
+                  {feature.desc}
+                </p>
+              </div>
+              <div className="mt-auto rounded-2xl overflow-hidden border border-zinc-100 shadow-inner">
+                <img src={feature.img} alt={feature.title} className="w-full h-auto object-cover" />
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const Pricing = () => (
   <section id="harga" className="py-24 bg-white scroll-mt-24">
@@ -642,6 +761,7 @@ export default function App() {
       <BentoGrid />
       <VideoDemo />
       <Testimonial />
+      <FullFeaturesSection />
       <Pricing />
       <FAQ />
       <Footer />
