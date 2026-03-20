@@ -612,8 +612,8 @@ const Pricing = () => (
         </div>
         <h3 className="text-zinc-500 font-bold uppercase tracking-widest text-sm mb-4">Investment</h3>
         <div className="flex items-baseline gap-2 mb-8">
-          <span className="text-5xl md:text-6xl font-black">Rp199k</span>
-          <span className="text-zinc-400 line-through">Rp399k</span>
+          <span className="text-5xl md:text-6xl font-black">Rp99k</span>
+          <span className="text-zinc-400 line-through">Rp299k</span>
         </div>
         <ul className="space-y-4 mb-10">
           {[
